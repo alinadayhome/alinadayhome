@@ -1,0 +1,41 @@
+.col-card {
+    border: 1px solid #c1c1c1;
+	background-color: white;
+	border-radius: 3px;
+	padding-top:5px;	
+	margin-bottom:15px;
+}
+.mb-10 {
+	margin-bottom:20px;
+}
+
+.card-body:hover h6 {
+	color: blue; 
+	text-decoration: underline;	
+}
+
+.col-md-3 a {
+	text-decoration: none;
+}
+
+div.card-img {
+   display: inline-block;
+   width:100%; 
+   height:100px; 
+   margin:0; 
+   padding:0; 
+}
+
+img:hover {
+	opacity: 0.6;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.hover-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+

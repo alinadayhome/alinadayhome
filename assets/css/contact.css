@@ -1,0 +1,52 @@
+.btn {
+  padding: 10px 20px; 
+  margin: 8px 0;
+  margin-bottom:25px;
+  border: none;
+  cursor: pointer;
+  width: 140px;
+  opacity: 0.9;
+}
+
+.btn-send {
+	background: linear-gradient(to top, #00a2e8 0%, #ccffff 100%);	
+	border-radius: 25%;	
+}
+
+.btn-send:hover {
+	background: linear-gradient(to bottom, #00a2e8 0%, #ccffff 100%);
+}
+
+
+.error {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.ptop-55 {
+  padding-top:55px;
+}
+
+.btn {
+  padding: 10px 20px; 
+  margin: 8px 0;
+  margin-bottom:25px;
+  border: none;
+  cursor: pointer;
+  width: 140px;
+  opacity: 0.9;
+}
+
+.google-map {
+    border:1px solid #13AAEA;
+    border-radius: 3px;
+}
+
+.modal-header , .modal-footer{
+    background-color: #dddddd;
+}
+
+
+
+
+

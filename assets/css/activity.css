@@ -1,0 +1,76 @@
+
+.cell a {
+	display:block;	
+	border: 1px solid rgb(0,169,212);
+    color: #235868; 	
+	text-align: center;	
+	font-size: 1.2em;	
+	text-transform: uppercase;	
+	padding-top:2.5em;
+	padding-bottom: 2.7em;;
+	margin-bottom:0rem;
+	font-weight:600;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: underline;
+}
+
+
+
+.bg-light-yellow {
+	background-color: #ffdc4a;
+}
+
+.bg-light-green {
+	background-color:#a8d79e;
+}
+
+.bg-red-orange {
+	background-color:#ff8454;
+}
+.cell a:hover {
+	background-color: #c1c1c1; 
+	color: white; 
+}
+
+.row a {
+  width:100%;height:60%;
+}
+
+.modal-header, .modal-footer   {
+	background-color: rgb(255, 220, 74);
+}
+
+.modal  {
+    -webkit-border-radius: 25px !important;
+    -moz-border-radius: 25px !important;
+    border-radius: 25px !important; 
+}
+
+.modal-dialog {
+border-radius: 25px !important;
+}
+
+.icon-main-nav {	
+	position: relative;
+	text-align: center;	
+}
+
+
+.cell {
+	padding-bottom:25px;	
+}
+
+@media only screen and (max-width: 640px) {
+	.cell {
+		margin-left: 35px;	
+	}
+    .cell a { 
+		width:75%;
+		height:25%;	
+		align-items: center;
+		justify-content: center;	
+    }
+}	

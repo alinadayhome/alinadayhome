@@ -1,0 +1,45 @@
+
+body {
+    margin:0;
+    padding:0;
+}
+
+.header {
+  font-family: "Permanent Marker";
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  color:  #00a2e8; 
+  z-index:1;
+}
+
+.top-head {
+	background-color: #f8f8f8;
+  margin-top: 0px;
+	padding-top:5px;
+	padding-bottom:6px;
+  position: relative;
+}
+
+.login {
+	font-size:10px;
+	float:right;
+}
+
+.bgcolor-gradient {
+	background: linear-gradient(to bottom, #00a2e8 0%, #ccffff 100%);
+}
+
+.award {
+	text-align: right; 
+	padding-bottom:7px; 
+	font-size:12px;"
+}
+
+.award-target::before {
+  content:"";
+  display:block;
+  height:105px; /* fixed header height*/
+  margin:-105px 0 0; /* negative fixed header height */
+}
+

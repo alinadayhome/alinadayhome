@@ -1,0 +1,28 @@
+body {
+    margin:0;                   
+    padding:0; 
+}
+
+.ptop-55 {
+	padding-top:55px;
+}
+
+.headline {
+ padding-top:5px;
+ font-weight: bold;
+}
+.new-line {
+	display:block;
+}
+
+.offset:before { 
+  display: block; 
+  content: " "; 
+  height: 100px;      /* Give height of your fixed element */
+  margin-top: -100px; /* Give negative margin of your fixed element */   
+  visibility: hidden; 
+}
+
+p {
+ line-height:2;
+}

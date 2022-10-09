@@ -1,0 +1,50 @@
+
+.author {
+	color: cornflowerblue;
+}
+ 
+blockquote {
+  background: #f9f9f9;
+  border-left: 3px solid #ccc;
+  margin: 1em 10px;
+  padding: 0.5em 10px;
+  display: inline-block;
+}
+
+.quotation-mark {
+	font-style: italic;
+	color:#bfbfbf;
+}
+
+.quote {
+	font-size:16px;
+	font-style: italic;
+	font-weight: 600;
+}
+
+div#testimonial ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+div#testimonial ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  line-height:1.8;
+ 
+}
+
+div#testimonial ul li.quote:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: FontAwesome;
+  content: "\f10d";
+  color:#bfbfbf;
+  font-size:16px;
+  font-style: normal;
+}
+
+
+
