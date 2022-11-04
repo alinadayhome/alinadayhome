@@ -52,6 +52,16 @@
 
 <script>
   var dir = "../assets/img/gallery/";
+	
+
+ $.ajax({
+      url: "program.html",
+      dataType: "html",
+      success: function(data) {
+            alert("test");
+      }
+});
+	
   $.ajax({
     url : dir,
     success: function (data) {
