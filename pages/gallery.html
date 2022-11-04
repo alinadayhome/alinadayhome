@@ -54,6 +54,7 @@
   $.ajax({
     url : dir,
     success: function (data) {
+	    alert("page under construction");
         $(data).find("a").attr("href", function (i, val) { 
             if( val.match(/\.(jpg|JPG|png|gif)$/) ) { 
             	$('#photo').append("<h2 class='col-md-12 text-center'><img class='img-fluid' src='"+ dir + val + "'>");
