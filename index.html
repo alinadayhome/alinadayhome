@@ -5,193 +5,365 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">   
 	<meta name="description" content="Alina dayhome" />
 	<meta name="keywords" content="Calgary, kids, children, Dayhome, licensed, activity, subsidy" />
-	<meta name="author" content="Paul B. Waked">
-
+	<meta name="author" content="Paul B. Waked - Wakedsoft.com">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-4.1.3/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="assets/css/home.css" />
-	<link rel="stylesheet" type="text/css" href="assets/css/anypage.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/header.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/navbar.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/js/bootstrap-4.1.3/bootstrap.min.js"></script>
 	<script> 
-	  $(function(){
-	     $("#navbar").load("includes/menu.html"); 
+	  $(function(){ 
+	     $("#header").load("includes/header.html");  	  
+  		 $("#navbar").load("includes/menu.html");
+  		 $("#footer").load("includes/footer.html");
+  		 $("#copyright").load("includes/copyright.html");
 	  });
-	</script> 
 
+	</script> 
 </head>
 <body>
 
-<!-- -->
- 
-<div class="header">
-  <h2> Alina Dayhome</h2>
-  <p> <img src="assets/img/header/logo.jpg" alt="Logo" style="width:180px;"> </p>
-  <p>Licensed dayhome </p>
-</div>
-
+<div id="header"></div>
 <div id="navbar"></div>
 
-
-
-
-<img src="assets/img/index/kids.jpg" class="img-fluid image-container" alt="kids scribbling"/> 
-
-<!-- Welcome -->
-<div class="container">
-    <h4>Welcome to Alina Dayhome</h4>
-    <p class="headline">
-	</p>	
-    <div class="row">
-      <div class="col-sm-4 order-sm-2 mb-2"><img src="assets/img/index/1.jpg" class="img-fluid rounded" alt="welcome"/>
+<!-- -->
+  <div class="carousel-item active">
+    <img class="d-block w-100" src="assets/img/index/kids-3.jpg" alt="train track at alinadayhome">
+       <div class="carousel-caption  d-md-block">
+        <h4 class="zoom-heading  increase-fontsize" style="animation-duration: 2s;">Licensed Family Child Care</h4>
+        <p  class="zoom-heading" style="animation-duration: 4s;">Learning through play</p>
       </div>
-      <div class="col-sm-8 order-sm-1 mb-2">
-	      <p> We provide child care for children from 12 months to 6 years old.
-		  Our aim is to provide a safe and happy environment where children can grow and 
-		  learn under the guidance and supervision of our dedicated and caring staff. 
-		  We hope to fulfill each child physical, intellectual, emotional and social 
-		  needs, while showing them kindness, consistent discipline, and encouragement 
-		  in a happy and informal setting.
-		   </p>
-	   </div>
+  </div>
+ 
+
+<div class="container-fluid pt-2 welcome">
+<div class="mb-3" >
+  <div class="row">  
+    <div class="col-md-8">
+      <div >
+          <p class="linespace pt-2" >  <span class="firstword font-weight-bold"> Alina Dayhome </span> is a new licensed dayhome located in Cranston, SE community of Calgary and was open in October 2022. We provide child care for children from age 12 months to 5 years old and offer a safe and welcoming environment. </p> 
+          <p class="linespace">In our dayhome, children can enjoy learning experiences through play to fulfill their physical, social and emotional needs. They will learn, grow and be ready for school.
+		      </p>
+
+          <p> 
+Our goal is to respect children, facilitate their learning and help them express their feelings by providing appropriate learning experiences. We value good listenning, communication skills, patience, and engagement. We also aim to promote self-esteem by providing opportunities to build trust, independence, and initiative during our daily routines.
+          </p>
+      </div>
     </div>
-	<hr>
+    <div class="col-md-4">
+      <figure>
+      <img id="1" src="assets/img/index/playroom.jpg" data-toggle="modal" data-target="#myModal" class="img-fluid rounded-start cursor" alt="...">   
+      <figcaption> Playroom and library corner</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
 </div>
 
-<!-- Our Mission -->
-<div class="container">
-    <h4>Our Mission</h4>
-    <p class="headline"></p>	
-    <div class="row">
-      <div class="col-sm-4 order-sm-2 mb-2"><img src="assets/img/index/2.jpg" class="img-fluid rounded" alt="mission"/>
-        </div>
-      <div class="col-sm-8 order-sm-1 mb-2">
-	  <p>
-	   Alina Dayhome strives to provide a safe and nurturing learning environment for children, staff, and families as demonstrated 
-	   through professional practice and quality programming.
-		</p>
-   </div>
+<!--              -->
+<!-- our beliefs   -->
+<hr>
+<div class="container-fluid pt-2">
+<div  class="mb-3">
+  <div class="row g-0">
+    <div class="col-md-4">
+       <figure>
+        <img id="2" src="assets/img/index/7.jpg" data-toggle="modal" data-target="#myModal" class="img-fluid rounded-start cursor" alt="...">
+      <figcaption> Play room - pick-up toys and play</figcaption>
+      </figure>   
     </div>
-	<hr>
-</div>  
-
-<!-- Culture and Diversity -->
-<div class="container">
-    <h4>Culture and Diversity</h4>
-    <p class="headline"></p>	
-    <div class="row">
-      <div class="col-sm-4 order-sm-2 mb-2"><img src="assets/img/index/3.jpg" class="img-fluid  rounded" alt="Culture and Diversity"/>
-        </div>
-      <div class="col-sm-8 order-sm-1 mb-2">
-	  
-	  <p>
-	   Our center believes in welcoming every child from different parts of the world to our program and helping them to reach their fullest potential. We aim to include all children in our daily planning through several multicultural activities and strive to 
-	   break down any barriers so that all may participate. 
-		</p>
-		
-	
-   </div>
+    <div class="col-md-8">
+      <div >
+        <h4 class="font-weight-bold" >Our beliefs</h4>
+        <p class="card-text linespace">We believe that play helps children learn new skills and develop in all domains including socially, emotionally, and cognitively. We also believe in the benefits of the cultural diversity and inclusion and respect differences. We welcome every child from different parts of the world. </p>
+        <p> We consider that creating an environment according to the physical, social and communication skills of the children would be fundamental for their learning.</p>
+      </div>
     </div>
-	<hr>
-</div>  
+  </div>
+</div>
+</div>
 
-<div id="project-gallery" class="container" >
- <h4>Our Program</h4>
-  <p class="headline">We offer four group ages.</p>	
-	 <div class="row">
-	    <!-- column 1 -->
-		<div class="col-md-3"> 
-		 <div class="mb-10"> 	
-			<a id="toddler-link" href="pages/program.html#toddler">		
-			<div class="card hover-shadow">
-		    <img class="card-img-top" src="assets/img/index/4.jpg" alt="toddler playing">	 										
-			<div class="card-body">
-			<h4 class="card-title">Toddler Room </h4>
-			<p class="card-text">(ages 12 - 24 months)</p>
-			<h6 class="card-text">Learn More ...</h6> 
-			</div>			
-			</div>
-			</a>
-		</div>		
-		</div>
-		<!-- column 2 -->
-		<div class="col-md-3"> 
-		 <div class="mb-10"> 	
-			<a href="pages/program.html#room2-3">				
-			<div class="card hover-shadow">
-		    <img class="card-img-top" src="assets/img/index/2.jpg" alt="age 2-3 rorm">	 										
-			<div class="card-body">
-			<h4 class="card-title">2 & 3 Room </h4>
-			<p class="card-text">(ages 2 - 3 years) </p>
-			<h6 class="card-text">Learn More ...</h6> 
-			</div>			
-			</div>
-			</a>
-		</div>		
-		</div>
-		<!-- column 3 -->
-		<div class="col-md-3"> 
-		 <div class="mb-10"> 	
-			<a href="pages/program.html#room3-4">				
-			<div class="card hover-shadow">
-		    <img class="card-img-top" src="assets/img/index/3.jpg" alt=" age 3-4 room">	 										
-			<div class="card-body">
-			<h4 class="card-title">3 & 4 Room </h4>
-			<p class="card-text">(ages 3 -4 years)</p>
-			<h6 class="card-text">Learn More ...</h6> 
-			</div>			
-			</div>
-			</a>
-		</div>		
-		</div>
-		<!-- column 4 -->
-		<div class="col-md-3"> 
-		 <div class="mb-10"> 	
-			<a href="pages/program.html#room4-5">				
-			<div class="card hover-shadow">
-		    <img class="card-img-top" src="assets/img/index/4.jpg" alt="age 4-5 room">	 										
-			<div class="card-body">
-			<h4 class="card-title">4 & 5 Room </h4>
-			<p class="card-text">(ages 4 - 6 years)</p>
-			<h6 class="card-text">Learn More ...</h6> 
-			</div>			
-			</div>
-			</a>
-		</div>		
-		</div>
-    </div>	
-	<hr>
-</div>  
+<hr>
 
-<div class="container">
-    <h4>Our Philosophy </h4>
-    <p class="headline"></p>	
-    <div class="row">
-      <div class="col-sm-4 order-sm-2 mb-2"><img src="assets/img/index/4.jpg" class="img-fluid  rounded" alt="philosophy"/>
-        </div>
-      <div class="col-sm-8 order-sm-1 mb-2">
-	  
-	  <p>
-	   <b>"It takes a community to raise a child"</b>. This simple term is used to describe all the joy and importance that children play 
-	   within our society, as well as the responsibility that comes with raising children. 
-	   Teamwork is fundamental in raising a child. It is the belief of our program that together 
-	   as parents and caregivers, we provide an environment that is stimulating, educational, 
-	   caring, but above all, 
-	   a place where children feel safe and secure.
-	  </p>
-		
-   </div>
+
+<div class="container-fluid">
+   <h5 class="pt-3 font-weight-bold text-center">Enjoyable Experience at Home</h5>
+    <p class="headline"></p>
+  <div class="row">
+      <div class="col-xs-12 col-md-6">
+          <div class="bg bg-left">
+            <p class="caption-image" >Do not worry about your children while you are at work.
+            We create an enjoyable and meaningful experience at our home where children feel safe and secure.</p>
+          </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+            <div class="mobile-space bg bg-right">
+            <p> </p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<hr>
+<!-- -->  
+<br>
+<div class="container bg-aliceblue container-border">
+  <div class="row">
+    <div class="col-md-6 col-xs-6 pt-2" style="background-color:#ebf6f7">
+    <h4><i class="fa fa-calendar" aria-hidden="true"></i> Our Daily Schedule</h4>
+      <p class="linespace"> Daily routine in home daycare helps kids develop self-discipline and gives them a sense of security. 
+      It also helps educators to stick to healthy expectations for every child.
+      <br>
+     Please see <a href="pages/dailyschedule.html" class="font-weight-bold"> our daily routine schedule</a> for more details.
+     </p>
     </div>
-	<hr>
-</div>  
+    <div class="col-md-6 col-xs-6 pt-2">
+  <h4> <i class="fa fa-cutlery" aria-hidden="true"></i> Our Meal Plan</h4>
+      <p class="linespace"> We serve fresh and healthy meals following the Canadian Food Guide recommendation. 
+     </p>
+     <p> We ask parents about food preferences, food allergies, and medical conditions, cultural or religious practices that concern food, and change
+ our meals accordingly.
+     </p>
+     <p> Click <a href="pages/mealplan.html" class="font-weight-bold">here</a>
+        for more info about our weekly food menu. </p>
+  </div>
+  </div>
+</div>
+<br>
+<hr>
 
-<script src="assets/js/date.js"></script>
-<script src="assets/js/smooth-scroll.js"></script>	
+<div id="intro-activity" class="container-fluid">
+  <div class="padtop">
+    <h4 class="pt-3 font-weight-bold text-center">Our Activities</h4>
+  </div>
+     <p class="headline"></p>
+    <div class="row">
+      <div class="col-12 .col-sm-6 col-md-6 col-lg-6 .col-xl-6 "> 
+    <div class="row">
+      <div class="col-12 .col-sm-6 col-md-6 col-lg-6 .col-xl-6">
+        <img src="assets/img/index/finemotor.jpg" class="img-fluid rounded-circle"  alt="">
+      </div>
+      <div class="col-12 .col-sm-6 col-md-6 col-lg-6 .col-xl-6"> 
+      <h5>Fine Motor</h5>
+      <p>We use crayons, paints, play dough, and clay to make creative impressions, grasping toys, shape sorting game, pegging, small/medium/large blocks, beading, threading to enhance their fine motor skills. </p>
+      </div>
+      </div>
+      </div>
+
+     <div class="col-12  .col-sm-6 col-md-6 col-lg-6 .col-xl-6 ">
+     
+      <div class="row mobile-space">
+        
+      <div class="col-12 .col-sm-6 col-md-6 col-lg-6 .col-xl-6">
+        <p class="line"></p>
+        <img src="assets/img/index/fineart.jpg" class="img-fluid rounded-circle"  alt="">
+      </div>
+      <div class="col-12 .col-sm-6 col-md-6 col-lg-6 .col-xl-6">
+      <h5>Creative Art</h5> 
+        <p> Although younger children have more guided crafts they still have the opportunity to freely express themselves with numerous materials and art supplies.
+        </p>
+     </div>
+      </div>
+
+
+     </div>
+
+    </div>
+<br>
+        <div class="row">
+      <div class="col-12 .col-sm-6 col-md-6 col-lg-6 .col-xl-6 "> 
+    <div class="row">
+      <div class="col-12 .col-sm-6 col-md-6 col-lg-6 .col-xl-6">
+        <img src="assets/img/index/outdoorplay.jpg" class="img-fluid rounded-circle"  alt="">
+      </div>
+      <div class="col-12 .col-sm-6 col-md-6 col-lg-6 .col-xl-6"> 
+    <h5>Outdoor play</h5>
+      <p>We allow the children to play outside for a minimum of an hour a day. This allows them to build up their gross motor skills while getting a good amount of fresh air. </p>
+      </div>
+      </div>
+      </div>
+
+     <div class="col-12  .col-sm-6 col-md-6 col-lg-6 .col-xl-6 ">
+     
+      <div class="row mobile-space">
+        
+      <div class="col-12 .col-sm-6 col-md-6 col-lg-6 .col-xl-6">
+        <p class="line"></p>
+        <img src="assets/img/index/science.jpg" class="img-fluid rounded-circle"  alt="">
+      </div>
+      <div class="col-12 .col-sm-6 col-md-6 col-lg-6 .col-xl-6">
+      <h5>Science and Discovery</h5> 
+      <p> 
+        Exploring is what we do best, why is the sky blue, why are rocks hard, these are some of the questions we hear and solve together. Using many different materials we provide a great learning environment.
+      </p>
+     </div>
+      </div>
+     </div>
+    </div>
+    <div class="font-weight-bold text-center h5">For more info, take a look at 
+    <a href="pages/activity.html">our activities page <i  class="fa fa-long-arrow-right arrow-icon fa-lg"></i></a> </div>
+</div>
+<hr>
+
+<!-- picture gallery -->
+<div class="container-fluid" >
+  <h4 class="pt-3 font-weight-bold text-center pb-2">Our Picture Gallery</h4>
+   <div class="row mb-2">
+    <div class="col-md-4 mb-2"> 
+     <div class="mb-10">      
+      <div class="card hover-shadow">
+        <figure>
+        <img id="3" class="card-img-top cursor" src="assets/img/index/gallery_1.jpg" alt="" data-toggle="modal" data-target="#myModal" >
+         <figcaption> Outdoor play</figcaption>  
+        </figure>                      
+      </div>    
+    </div>    
+    </div>
+    <div class="col-md-4 mb-2"> 
+     <div class="mb-10">  
+      <div class="card hover-shadow">
+         <figure>
+        <img class="card-img-top cursor" src="assets/img/index/gallery_4.jpg" alt=""
+        data-toggle="modal" data-target="#myModal">
+         <figcaption> Playing with sand</figcaption>  
+        </figure>                      
+      </div>  
+    </div>    
+    </div>
+       <div class="col-md-4 mb-2"> 
+     <div class="mb-10">  
+      <div class="card hover-shadow">
+         <figure>
+        <img class="card-img-top cursor" src="assets/img/index/gallery_3.jpg" alt=""
+        data-toggle="modal" data-target="#myModal">
+         <figcaption> Painting</figcaption>  
+        </figure>                    
+      </div>  
+    </div>    
+    </div>
+    </div>
+    <!-------------->
+    <!-- row 2 -----> 
+    <div class="row pt-2">
+    <div class="col-md-4"> 
+     <div class="mb-10">      
+      <div class="card hover-shadow">  
+        <figure>
+        <img class="card-img-top cursor" src="assets/img/index/11.jpg" alt=""
+        data-toggle="modal" data-target="#myModal">
+         <figcaption> Playing music corner</figcaption>  
+        </figure>                              
+      </div>    
+    </div>    
+    </div>
+    <div class="col-md-4 mb-2"> 
+     <div class="mb-10">  
+      <div class="card hover-shadow">
+         
+        <figure>
+        <img class="card-img-top cursor" src="assets/img/index/6.jpg" alt=""
+        data-toggle="modal" data-target="#myModal">
+         <figcaption> Playing outside</figcaption>  
+        </figure>                    
+      </div>  
+    </div>    
+    </div>
+       <div class="col-md-4 mb-2"> 
+     <div class="mb-10">  
+      <div class="card hover-shadow">
+        
+        <figure>
+        <img class="card-img-top cursor" src="assets/img/index/8.jpg" alt=""
+        data-toggle="modal" data-target="#myModal">
+         <figcaption> Planting sunflower at the front door</figcaption>  
+        </figure>                           
+      </div>  
+    </div>    
+    </div>
+    </div>
+
+      <!-- row 3 --> 
+    <div class="row pt-2">
+    <div class="col-md-4"> 
+     <div class="mb-10">      
+      <div class="card hover-shadow">
+        <figure>
+        <img class="card-img-top cursor" src="assets/img/index/gallery_6.jpg" alt=""
+        data-toggle="modal" data-target="#myModal">
+         <figcaption> Learning Experience - Halloween/Autumn</figcaption>  
+        </figure>                              
+      </div>    
+    </div>    
+    </div>
+    <div class="col-md-4"> 
+     <div class="mb-10">  
+      <div class="card hover-shadow">
+       
+        <figure>
+        <img class="card-img-top cursor" src="assets/img/index/gallery_9.jpg" alt=""
+        data-toggle="modal" data-target="#myModal">
+         <figcaption> Kids playing piano</figcaption>  
+        </figure>                      
+      </div>  
+    </div>    
+    </div>
+       <div class="col-md-4"> 
+     <div class="mb-10">  
+      <div class="card hover-shadow">
+        <figure>
+        <img class="card-img-top cursor" src="assets/img/index/gallery_2.jpg" alt=""
+        data-toggle="modal" data-target="#myModal">
+         <figcaption> Hallway/hopscotch play</figcaption>  
+        </figure>                             
+      </div>  
+    </div>    
+    </div>
+    </div> 
+    <div class="font-weight-bold text-center pt-4 h5"> 
+    <a href="pages/gallery.html">See more picture on our gallery page <i  class="fa fa-long-arrow-right arrow-icon fa-lg"></i></a> </div>  
+</div>
+
+<br>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg"  role="document">
+        <span class="close">&times;</span>
+        <div class="modal-content">      
+                <img class="img-responsive" src="" /> 
+            <div class="modal-footer">
+               <div id="caption"></div>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="footer"></div>
+<div id="copyright"></div>
+
+<script src="assets/js/smooth-scroll.js"></script>
 <script src="assets/js/sticky-menu.js"></script>
 
+<script>
 
+$(document).ready(function () {
+    $('img').on('click', function () {
+        var image = $(this).attr('src');
+        var figcaption = $(this).parent().find('figcaption').text();
+        $('#myModal').on('show.bs.modal', function () {
+            $(".img-responsive").attr("src", image);
+            $("#caption").text(figcaption);
+        });
+    });
+});
+
+
+
+
+</script>
 </body>
 </html>
