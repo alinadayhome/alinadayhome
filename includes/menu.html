@@ -1,44 +1,68 @@
-<div class="nav-wrapper"> 
- <nav  id="navbar"  class="navbar  navbar-expand-lg navbar-light bgcolor-gradient">
+<div class="wrapnav">
+<nav  id="navbar"  class="navbar  navbar-expand-lg navbar-light bgcolor">
   <div id="header-container" class="container  navbar-container">
-
+  
   <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#collapseNavbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
+ 
   <div class="collapse navbar-collapse" id="collapseNavbar">
     <ul class="navbar-nav mx-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="https://alinadayhome.com/index.html">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item" id="nav-logo">
+        <img src="http://localhost/alinadayhome/assets/img/5.jpg" alt="logo image" id="img-logo"> 
       </li>
-	   <!-- Programs -->
-	  <li class="nav-item">
-        <a class="nav-link"  href="https://alinadayhome.com/pages/program.html">Program</a>
+
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost/alinadayhome/index.html">Home <span class="sr-only">(current)</span></a>
       </li>
-		<!-- Activity -->
-	  <li class="nav-item">
-        <a class="nav-link" href="https://alinadayhome.com/pages/activity.html">Activity</a>
-      </li> 	  
-	  <!-- Gallery -->
-	  <li class="nav-item">
-        <a class="nav-link" href="https://alinadayhome.com/pages/gallery.html">Gallery</a>
-      </li>	
-	  <li class="nav-item">
-        <a class="nav-link" href="https://alinadayhome.com/pages/tuition.html">Tuition</a>
-      </li>		  
-	  <!-- Subsidy -->
-	  <li class="nav-item">
-        <a class="nav-link" href="https://alinadayhome.com/pages/subsidy.html">Subsidy</a>
-      </li>  
+	  <li class="dropdown">
+      <a class="nav-link pl-2 dropdown-toggle" href="#" id="ddParentInfo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Parent Info
+        </a>
+          <div  class="dropdown-menu" aria-labelledby="ddparentinfo">
+            <a  class="dropdown-item" href="http://localhost/alinadayhome/pages/dailyschedule.html">Daily Schedule</a>
+            <a class="dropdown-item"  href="http://localhost/alinadayhome/pages/mealplan.html">Meal Plan </a> 
+            <a class="dropdown-item" href="http://localhost/alinadayhome/pages/rates_subsidy.html">Rates and Subsidy</a> 
+        </div>
+    </li>
+     
+     <li class="dropdown">
+      <a class="nav-link pl-2 dropdown-toggle" href="#" id="ddParentInfo" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Programs
+        </a>
+          <div  class="dropdown-menu" aria-labelledby="ddprogram">
+            <a  class="dropdown-item" href="http://localhost/alinadayhome/pages/activity.html">Activities</a>
+            <a class="dropdown-item"  href="http://localhost/alinadayhome/pages/gallery.html">Photo Gallery </a> 
+        </div>
+    </li>		  
+	 <li class="nav-item">
+        <a class="nav-link" href="http://localhost/alinadayhome/pages/blog/blog.html">Blog</a>
+      </li> 
 	  <!-- Contact -->
 	  <li class="nav-item">
-        <a class="nav-link" href="https://alinadayhome.com/pages/contact.html">Contact</a>
+        <a class="nav-link" href="http://localhost/alinadayhome/pages/contact.html">Contact</a>
       </li>  
     </ul>
   </div>
-  
-  <div> <a class="btn-register" href="https://alinadayhome.com/pages/registration.html" role="button">Register Online</a> </div>
   </div>
 </nav>
 </div>
 
+
+<script>
+
+$(document).ready(function() {  
+
+var url = window.location.href; 
+
+ // Loop all menu items
+  $('.navbar li').each(function(){
+     var href = $(this).find('a').attr('href');
+     if(url == href){
+        $(this).addClass('active');
+     }
+  });
+
+});
+
+</script>
