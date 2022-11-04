@@ -1,45 +1,90 @@
-
-body {
-    margin:0;
-    padding:0;
-}
-
 .header {
-  font-family: "Permanent Marker";
+  font-family:cursive;
   background-color: white;
-  padding: 30px;
-  text-align: center;
-  color:  #00a2e8; 
+  text-align: left;
+  color:  #000080;
   z-index:1;
 }
 
-.top-head {
-	background-color: #f8f8f8;
-  margin-top: 0px;
-	padding-top:5px;
-	padding-bottom:6px;
+.top-header { 
+  font-weight: bold;
+  color: #f0d68b;
+}
+
+.logo-and-title {
+  margin: 3%;
   position: relative;
 }
 
-.login {
-	font-size:10px;
-	float:right;
+.logo-and-title img {
+  width:140px;
+}
+ 
+.title { 
+  font-family: "american typewriter, serif";
+  font-weight: 600;
+  font-size: 150%;
+  color: #222092; /*#5b7f39; */
 }
 
-.bgcolor-gradient {
-	background: linear-gradient(to bottom, #00a2e8 0%, #ccffff 100%);
+.subtitle { 
+  font-family: cursive;
+  color: #000080; 
 }
 
-.award {
-	text-align: right; 
-	padding-bottom:7px; 
-	font-size:12px;"
+.phone-email {
+   font-size: 120%;
+   font-weight: 600;
 }
 
-.award-target::before {
-  content:"";
-  display:block;
-  height:105px; /* fixed header height*/
-  margin:-105px 0 0; /* negative fixed header height */
+div#logo img{
+   width:100px;
+    border-radius: 25px; 
 }
+
+#nav-logo {
+  display: none;
+  margin-right: 30px;
+  border-radius: 10px; 
+}
+
+#nav-logo img {
+  width:80px; 
+  border-radius: 10px; 
+}
+
+.img-logo {
+   transition: width 2s;
+}
+
+.logo-title-color-1 {   
+  color:#C70039; /* #ed1c26; */
+}
+
+.logo-title-color-2 {
+  color:#296adf;
+}
+.logo-title-color-3 {
+  color:#30db42; 
+}
+
+
+@media screen and (max-width: 650px) {
+  div#logo img{
+    width:70px;
+    border-radius: 10px; 
+  } 
+
+  .phone-email {
+   padding-top: 20px;
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+  div#logo img{
+    width:70px;
+  } 
+}
+
 

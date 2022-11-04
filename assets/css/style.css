@@ -1,44 +1,366 @@
-/* CSS used here will be applied after bootstrap.css */
-html,body {
-  height:100%;
-    
+
+sticky.skewed {
+  transform: skew(-1deg, -1deg);
 }
 
-.first {
-  padding-top:140px;
-  height:100vh;
-  min-height:400px;
-  background-size:cover;
+.linespace {
+  line-height: 32px;
 }
 
-.affix {
-  -webkit-transition:padding 0.2s ease-out;
-  -moz-transition:padding 0.2s ease-out;  
-  -o-transition:padding 0.2s ease-out;         
-  transition:padding 0.2s ease-out;
+.firstword {
+  font-weight: 700; 
+  font-size: 20px;
+  color: #222092;
 }
 
-.affix-top {
-  /* navbar style at top */
-  background:transparent;
-  border-color:transparent;
-  padding: 15px;
-  -webkit-transition:all 0.5s ease;
-  -moz-transition:all 0.5s ease; 
-  -o-transition:all 0.5s ease;         
-  transition:all 0.5s ease;  
+.section {
+  margin-top: 10px;
+  position: relative;
+  min-height: 40vh;
+  margin: auto;
+  background-color: #48c9b0;
+  color: #ffffff;
+}
+.section.bg-static {
+  background-color: #85c1e9;
+  background-image: url("#");
+  background-size: cover;
+  background-position: center;
 }
 
-.affix-top .nav>li>a {
-   color: #000;
+.section .bg-move {
+  position: absolute;
+  top: 10;
+  bottom: 0;
+  right: auto;
+  width: 10%;
+  background-image: url("../../assets/img/test2.jpg"); 
+  background-size: 180px;
+  height: 150px;
+  width: 150px;
+  background-position: center;
+} 
+
+#firstpara {
+  margin:0;
+  padding:0;
+  position:relative;
+  top:50%;
+  left:-100;
+  transform: translateY(-50%);
+  white-space: wrap;
 }
 
-.affix-top .navbar-collapse {
-   border-color:transparent;
-   box-shadow:initial;
+.zoom {
+  transition: transform .3s; /* Animation */
+  margin: 0 auto;
+  cursor: pointer;
+  -webkit-transition-property: all; 
+  -webkit-transition-duration: 0.3s; 
+  -webkit-transition-timing-function: ease; 
 }
 
-section {
-  margin-top: 20px; 
-  margin-left:10px;
+img.zoom:hover {
+  z-index:2;
+  transform: scale(1.1); 
+  position:absolute;
 }
+
+.rounded-corner {
+   border-radius: 12%;
+   padding:5px;
+}
+
+hr {  
+    height: 1px;
+    width:70%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+}
+
+
+.bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #FFFFFF;
+    padding: 30px 30px;
+    font-weight: 600;
+    height:250px;
+}
+
+
+.bg-left {
+    background: #676968 url("../img/index/15.jpg")  ;
+    background-size: contain;
+ }
+
+/*.bg-right {
+    background: url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09");
+}*/
+
+.bg-right {
+  background: #676968 url("../img/index/123.jpg") no-repeat fixed center; 
+  background-size: cover;
+ }
+   
+}
+
+/* -- */
+
+.carousel-caption {
+   position: absolute;   
+   top:0%;
+}
+
+#carousel{
+  padding-top: 0em;
+}
+
+@keyframes increase-fontsize {
+  from {
+    font-size: 0.3em;
+  }
+  to {
+    font-size: 1.0em;
+    visibility: visible;
+    transition-property: font-size;
+    transition-duration: 1.5s;
+  }
+}
+
+.animate-heading {
+  visibility: hidden;
+  animation: 0s linear 1s forwards;
+  animation-name: increase-fontsize;
+  animation-duration: 1s;
+}
+
+.increase-fontsize{
+  animation: 0s linear 1.5s forwards;
+  animation-duration: 3.5s;
+  font-size:25px;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .increase-fontsize {
+    animation: 0s linear 1.5s forwards;
+    animation-duration: 3.5s;
+    font-size:25px;
+  }
+
+
+}
+
+@media only screen and (min-width: 400px) {
+ .carousel-caption {
+   position: absolute;   
+   top:20%;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+ .carousel-caption {
+   position: absolute;   
+   top:5%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #intro-activity img{
+    width: 70%;
+  }
+
+  #recentblog {
+    margin-top: 15px;
+  }
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0);}
+  to {transform: scale(1);}
+}
+
+.zoom-in-out { 
+  animation: animatezoom 5s infinite alternate;
+  background-color: #354F70;
+  border-radius: 10px;
+  padding:.1em;
+   
+}
+
+p.normal {
+  font-weight: normal;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.zoom-heading {
+    animation-name: zoom-in;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    background-color: #F0CE86; 
+    border-radius: 10px;
+    padding-top:.1em;
+    padding-bottom:.4em;
+    color:#222092;
+    opacity: .8;
+    font-weight: 700; 
+}
+
+.anim-2 {
+  animation-duration: 2s;
+}
+
+.anim-4 {
+  animation-duration: 4s;
+}
+
+.caption-image {
+  margin-top:40px; 
+  padding:5px; 
+  font-weight:700; 
+  background: #F0CE86;  
+  opacity: .8; 
+  color:#222092;
+}
+
+
+#rates ul {
+  list-style-type: none;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height:2;
+}
+
+#rates li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px
+}
+
+#rates li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: FontAwesome;
+  content: "\f00c";
+  color: green;
+}
+
+
+#rates li ul li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: FontAwesome;
+  content: "\f101";
+  color: green;
+}
+
+
+#activity img {
+  width:150px;
+}
+
+#intro-activity p {
+  line-height: 1.5;
+}
+
+.container-border {
+    border: 1px solid #c1c1c1;
+}
+
+p {
+  font-size: 18px;
+  line-height: 2;
+}
+
+figure {
+  /* border: 1px #cccccc  solid;*/
+  padding: 4px;
+  /*margin: auto;
+  background-color: #F0CE86;*/
+}
+
+/*figcaption {
+  background-color: #F0CE86;
+  color: #222092;
+  font-style: italic;
+  padding: 2px;
+  text-align: left;
+  font-weight: 500;
+}
+*/
+
+.cursor {
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close {
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  text-align: left;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: animatezoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: animatezoom;
+  animation-duration: 0.6s;
+}
+
+figure img:hover {
+  opacity: 0.6;
+}
+
+#ratesubsidy ul {
+    line-height: 2;
+    font-size: 18px;
+}
+
+
+.wrapper{margin: 0 auto;}
+.wrapper img{max-width: 100%; padding:5px;}
+
+
+.blogpost-title {
+  background-color: #222092; /*#296adf;*/
+  color: white; 
+  border-radius: 2px;
+}
+
+</style>
