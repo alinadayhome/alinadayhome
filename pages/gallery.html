@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  <meta name="description" content="Alina dayhome" />
+  <meta name="keywords" content="Calgary, kids, children, Dayhome, licensed, activity, subsidy" />
+  <meta name="author" content="Paul B. Waked - Wakedsoft.com">
+  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-4.1.3/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/header.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/mealplan.css" />
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/bootstrap-4.1.3/bootstrap.min.js"></script>
+  <script> 
+      $(function(){ 
+         $("#header").load("../includes/header.html");       
+         $("#navbar").load("../includes/menu.html");
+         $("#footer").load("../includes/footer.html");
+         $("#copyright").load("../includes/copyright.html");
+      });
+  </script> 
+
+</head>
+<body>
+
+<div id="header"></div>
+<div id="navbar"></div>
+
+<div class="container pt-5">
+    <h4 class="text-center">Photo Gallery</h4>
+    <p class="headline">
+	</p>	    
+</div> 
+
+<section class="pt-4 bgcolor">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 bgcolor" id="photo">  </div>
+  </div> 
+</div>
+</section>
+
+<div id="footer"></div>
+<div id="copyright"></div>
+
+<script src="../assets/js/sticky-menu.js"></script>
+
+
+<script>
+  var dir = "../assets/img/gallery/";
+  //var fileextension = [".JPG", ".jpg"];
+
+  $.ajax({
+    url : dir,
+    success: function (data) {
+        $(data).find("a").attr("href", function (i, val) { 
+            if( val.match(/\.(jpg|JPG|png|gif)$/) ) { 
+            	$('#photo').append("<h2 class='col-md-12 text-center'><img class='img-fluid' src='"+ dir + val + "'>");
+            } 
+        });     
+    }
+  });
+
+</script>
+
+</body>
+</html>
