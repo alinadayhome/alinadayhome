@@ -54,16 +54,18 @@
   var dir = "https://alinadayhome.com/assets/img/gallery/";
 	
 
- $.ajax({
+/* $.ajax({
       url: "https://alinadayhome.com/assets/img/gallery/5.JPG",
       dataType: "JPG",
       success: function(data) {
 	      $('#photo').append("<img class='img-fluid' src='https://alinadayhome.com/assets/img/gallery/5.JPG'>"); 
       }
 });
+*/
 	
- /* $.ajax({
-    url : dir,
+  $.ajax({
+    url : "program.html",
+    dataType: "html",
     success: function (data) {
 	    alert("page under construction");
         $(data).find("a").attr("href", function (i, val) { 
@@ -73,7 +75,7 @@
         });     
     }
   });
-  */
+
 
 </script>
 
