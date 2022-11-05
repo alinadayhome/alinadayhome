@@ -1,5 +1,5 @@
 
-$("#rates-link").on('click', function(event) {
+$("#n, #b, #g,#g2,#w,#m").on('click', function(event) {
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
