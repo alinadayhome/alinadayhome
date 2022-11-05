@@ -67,8 +67,9 @@
     url : "program.html",
     dataType: "html",
     success: function (data) {
-	    alert("page under construction");
+	    
         $(data).find("a").attr("href", function (i, val) { 
+		alert("page under construction");
             if( val.match(/\.(jpg|JPG|png|gif)$/) ) { 
             	$('#photo').append("<h2 class='col-md-12 text-center'><img class='img-fluid' src='"+ dir + val + "'>");
             } 
