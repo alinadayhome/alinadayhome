@@ -76,12 +76,13 @@
                     cache: false,
     success: function (data) {
 	    
-        $(data).find("a").attr("href", function (i, val) { 
-		alert(val);
-            if( val.match(/\.(jpg|JPG|png|gif)$/) ) { 
-            	$('#photo').append("<h2 class='col-md-12 text-center'><img class='img-fluid' src='"+ dir + val + "'>");
-            } 
-        });     
+	    if (data.indexOf(dir)>-1)
+                        {
+				 var direc = data.split("</A>");
+				alert(direc);
+			}
+	    
+       
     }
   });
 
