@@ -53,39 +53,14 @@
 <script>
   var dir = "../assets/img/gallery/";
 	
-
-/* $.ajax({
-	 url: dir,
-                 
-                    async: false,
-                    cache: false,
-		    
-     // url: "https://alinadayhome.com/assets/img/gallery/5.JPG",
-     // dataType: "JPG",
+ $.ajax({		    
+      url: "program.html",
+      dataType: "html",
       success: function(data) {
       alert("sucess");
 	      $('#photo').append("<img class='img-fluid' src='https://alinadayhome.com/assets/img/gallery/5.JPG'>"); 
       }
 });
-*/
-	
-  $.ajax({
-  			url: dir,
-             
-                    async: false,
-                    cache: false,
-    success: function (data) {
-	    
-	    if (data.indexOf(dir)>-1)
-                        {
-				 var direc = data.split("</A>");
-				alert(direc);
-			}
-	    
-       
-    }
-  });
-
 
 </script>
 
