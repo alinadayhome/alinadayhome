@@ -48,16 +48,14 @@
 
 <script src="../assets/js/sticky-menu.js"></script>
 
-
-
 <script>
-var dir = "../assets/img/gallery/";
+var dir = "https://alinadayhome.com/assets/img/gallery/";
 	
 $.ajax({		    
       url: "program.html",
       dataType: "html",
       success: function(data) {
-	      $('#photo').append("<img  class='p-3 img-fluid' src='https://alinadayhome.com/assets/img/gallery/5.JPG'>"); 
+	      $('#photo').append("<img  class='p-3 img-fluid' src='" + dir + "'5.JPG'>"); 
 	      $('#photo').append("<img  class='p-3 img-fluid' src='https://alinadayhome.com/assets/img/gallery/6.JPG'>");
 	      $('#photo').append("<img  class='p-3 img-fluid' src='https://alinadayhome.com/assets/img/gallery/7.JPG'>");
 	      $('#photo').append("<img style='padding:5px' class='img-fluid' src='https://alinadayhome.com/assets/img/gallery/8.JPG'>");
