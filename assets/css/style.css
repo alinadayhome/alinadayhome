@@ -175,6 +175,14 @@ hr {
   #recentblog {
     margin-top: 15px;
   }
+  
+  .zoom-heading {
+    padding-top:0;
+  }
+
+  .increase-fontsize{
+   font-size:15px;
+  }
 }
 
 @keyframes animatezoom {
