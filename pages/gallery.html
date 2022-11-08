@@ -51,15 +51,24 @@
 <script>
 var dir = "../assets/img/gallery/";
 var test = "https://github.com/alinadayhome/alinadayhome/tree/main/assets/img/gallery/";
-	
-	
+
 $.ajax({
-      url: test,
-      success: function(data) {
-            alert("test");
-      }
-});
-	
+    url: test,
+    headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    type: "POST", /* or type:"GET" or type:"PUT" */
+    dataType: "json",
+    data: {
+    },
+    success: function (result) {
+        console.log(result);
+    },
+    error: function () {
+        console.log("error");
+    }
+});	
+		
 $.ajax({ 
       url: "gallery.html",
       dataType: "html",
