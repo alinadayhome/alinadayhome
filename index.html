@@ -111,7 +111,7 @@ Our goal is to respect children, facilitate their learning and help them express
 <hr>
 <!-- -->  
 <br>
-<div class="container bg-aliceblue container-border">
+<div class="container reveal bg-aliceblue container-border">
   <div class="row">
     <div class="col-md-6 col-xs-6 pt-2" style="background-color:#ebf6f7">
     <h4><i class="fa fa-calendar" aria-hidden="true"></i> Our Daily Schedule</h4>
@@ -121,7 +121,7 @@ Our goal is to respect children, facilitate their learning and help them express
      Please see <a href="pages/dailyschedule.html" class="font-weight-bold"> our daily routine schedule</a> for more details.
      </p>
     </div>
-    <div class="col-md-6 col-xs-6 pt-2">
+    <div class="col-md-6 col-xs-6 pt-2" style="background-color:#f0ce86">
   <h4> <i class="fa fa-cutlery" aria-hidden="true"></i> Our Meal Plan</h4>
       <p class="linespace"> We serve fresh and healthy meals following the Canadian Food Guide recommendation. 
      </p>
@@ -363,7 +363,26 @@ $(document).ready(function () {
     });
 });
 
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
 
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+// To check the scroll position on page load
+reveal();
 
 
 </script>
