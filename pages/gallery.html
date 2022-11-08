@@ -49,7 +49,14 @@
 <script src="../assets/js/sticky-menu.js"></script>
 
 <script>
-var dir = "https://alinadayhome.com/assets/img/gallery/";
+var dir = "/alinadayhome/assets/img/gallery/";
+
+$.ajax({
+      url: dir,
+      success: function(data) {
+            alert("test");
+      }
+});
 	
 $.ajax({ 
       url: "gallery.html",
