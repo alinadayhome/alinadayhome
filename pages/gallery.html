@@ -55,11 +55,9 @@ $.ajax({
   url: "../assets/img/gallery/"  
 
 }).done(function( data ) {      
-    $(data).find("tbody tr a").each(function(i){
-        if(i>=4)
-        {           
+    $(data).find("a").each(function(i){  
              alert(i);          
-        }
+ 
 
     });
 });
