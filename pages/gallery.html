@@ -52,8 +52,8 @@
 var dir = "https://alinadayhome.com/assets/img/gallery/";
 
 $.ajax({
-  url: "../assets/img/gallery/"  
-
+  url: "../assets/img/gallery/",  
+ method: 'POST'
 }).done(function( data ) {      
     $(data).find("a").each(function(i){  
              alert(i);          
