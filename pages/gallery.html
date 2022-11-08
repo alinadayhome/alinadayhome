@@ -50,27 +50,10 @@
 
 <script>
 var dir = "https://alinadayhome.com/assets/img/gallery/";
-var myarray = {};
 	
-    $.ajax({
-        url: '../assets/img/gallery/',
-        method: 'POST',
-        contentType: false,
-        processData: false,
-        data: { new_name: myarray },
-        success: function(res){
-            console.log('successfully')
-        },
-        error: function(){
-            console.log('error')
-        }
-    });
-	
-	
-$.ajax({
-	//url: "../assets/img/gallery/", 
-     url: "gallery.html",
-     // dataType: "JPG",
+$.ajax({ 
+      url: "gallery.html",
+      dataType: "html",
       success: function(data) {
 	      $('#photo').append("<img  class='p-3 img-fluid' src='" + dir + "5.JPG'>");
 	      $('#photo').append("<img  class='p-3 img-fluid' src='" + dir + "6.JPG'>"); 
