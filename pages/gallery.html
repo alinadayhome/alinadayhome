@@ -49,6 +49,7 @@
 <script src="../assets/js/sticky-menu.js"></script>
 
 <script>
+var imgtag = "<img  class='p-3 img-fluid' src='";
 var dir = "../assets/img/gallery/";
 	
 		
@@ -56,8 +57,8 @@ $.ajax({
       url: "gallery.html",
       dataType: "html",
       success: function(data) {
-	      $('#photo').append("<img  class='p-3 img-fluid' src='" + dir + "5.JPG'>");
-	      $('#photo').append("<img  class='p-3 img-fluid' src='" + dir + "6.JPG'>"); 
+	      $('#photo').append(imgtag + dir + "5.JPG'>");
+	      $('#photo').append(imgtag + dir + "6.JPG'>"); 
 	      $('#photo').append("<img  class='p-3 img-fluid' src='" + dir + "7.JPG'>");
 	      $('#photo').append("<img  class='p-3 img-fluid' src='" + dir + "8.JPG'>");
 	      $('#photo').append("<img  class='p-3 img-fluid' src='" + dir + "9.JPG'>");
